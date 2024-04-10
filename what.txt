@@ -1,0 +1,3 @@
+1 dollar = x rupee 
+find x
+given convertor between dollar and india
