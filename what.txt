@@ -1,3 +1,13 @@
 1 dollar = x rupee 
 find x
 given convertor between dollar and india
+
+https://flagsapi.com/
+
+https://github.com/fawazahmed0/currency-api
+
+https://coolors.co/
+
+https://fontawesome.com/search?q=exchange&o=r
+
+https://cdnjs.com/libraries/font-awesome
