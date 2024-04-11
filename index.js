@@ -7,13 +7,14 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
-console.log("pp", fromCurr, toCurr);
-console.log("happy");
-for (code in countryList) {
-  console.log(code, countryList[code]);
-}
+// console.log("pp", fromCurr, toCurr);
+// console.log("happy");
 
-console.log(dropdown);
+// for (code in countryList) {
+//   console.log(code, countryList[code]);
+// }
+
+// console.log(dropdown);
 
 for (let select of dropdown) {
   for (codes in countryList) {
@@ -37,22 +38,22 @@ const updateExchangeRate = async () => {
     amt = 1;
     amt.value = "1";
   }
-  console.log(amt);
-  console.log(amt.value);
-  console.log("pp", fromCurr.value, toCurr.value);
-  console.log("happy");
+  //   console.log(amt);
+  //   console.log(amt.value);
+  //   console.log("pp", fromCurr.value, toCurr.value);
+  //   console.log("happy");
   const URL = `${BASE}/${fromCurr.value.toLowerCase()}/${toCurr.value.toLowerCase()}.json`;
-  console.log(URL);
+  //   console.log(URL);
   let respone = await fetch(URL);
-  console.log(respone);
+  //   console.log(respone);
   let exchangeRate = respone[toCurr.value.toLowerCase()];
-  console.log(exchangeRate);
+  //   console.log(exchangeRate);
   let finalAmount = exchangeRate * amt;
   msg.innerText = `${amt.value} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 
 const updateFlag = (element) => {
-  console.log(element);
+  //   console.log(element);
   let currCode = element.value;
   let countryCode = countryList[currCode];
   let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;

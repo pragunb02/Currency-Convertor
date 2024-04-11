@@ -11,3 +11,7 @@ https://coolors.co/
 https://fontawesome.com/search?q=exchange&o=r
 
 https://cdnjs.com/libraries/font-awesome
+
+https://currencyfreaks.com/#documentation
+
+https://app.freecurrencyapi.com/dashboard
